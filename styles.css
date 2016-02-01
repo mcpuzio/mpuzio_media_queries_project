@@ -1,0 +1,122 @@
+#iPad {
+	width: 100%;
+	height: 300px;
+	background-color: #99e6ff;
+}
+
+#iPad h3 {
+	padding: 20px;
+}
+
+#hide {
+	width: 302px;
+	height: 377px;
+	margin-left: 25px;
+	margin-top: 45px;
+	background-image: url("iPad.jpg");
+	display: none;
+}
+
+#iPad img {
+	/*visibility: hidden;*/
+	margin-top: 15px;
+	margin-left: 10px;
+	display: none;
+}
+
+
+img {
+	/*margin-left: 10px;
+	margin-top: 300px;
+	*/
+	position: absolute;
+}
+
+#tablet {
+	display: none;
+}
+
+#phone {
+	display: none;
+}
+
+nav {
+	height: 65px;
+	background-color: #ccf3ff;
+	list-style-type: none;
+}
+
+nav li {
+	float: left;
+	color: #007599;
+	padding: 30px 20px;
+	margin: 10px 50px;
+}
+
+p {
+	width: 185px;
+	margin-left: 100px;
+	color: #007599;
+}
+
+@media all and (max-width: 768px) {
+	
+	#iPad {
+		width: 100%;
+		height: 500px;
+	}
+
+	#hide {
+		display: block;
+	}
+
+	#desktop {
+		visibility: hidden;
+	}
+
+	#tablet {
+		display: block;
+	}
+
+	p {
+		/*display: none;*/
+	}
+}
+/*Although max-wdith should be 375, laptop doesn't display below 400*/
+@media all and (max-width: 400px) {
+	
+	#iPad {
+		width: 375px;
+		height: 230px;
+	}
+
+	#iPad h3 {
+		content: 
+	}
+
+	#hide {
+		display: none;
+	}
+
+	#iPad img {
+		/*visibility: visible;*/
+		display: block !important;
+	}
+
+	#tablet {
+		visibility: hidden;
+	}
+
+	#phone {
+		display: block;
+	}
+	nav li {
+		margin: auto 0;
+		padding: none;
+	}
+
+	#lorem {
+		color: black;
+	}
+
+}
